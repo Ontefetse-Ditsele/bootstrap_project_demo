@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<!--
+    Reaserach Project to demostrate the importance of Bootstrap in front end development. 
+    On this websitse we will have a simple one page website to show a navigation,
+    image with content/words next to it and a simple form to close off.
+-->
+
+<html>
+    <head>
+        <title>Bootstrap Reaseach Demo</title> 
+        <!-- Source the code from getbootstrap.com -->
+    </head>
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" 
+              integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" 
+              crossorigin="anonymous">
+    </head>
+    
+    <body>
+        <section class="py-5">
+        <nav class="navbar navbar-expand-lg navbar-dark bg-dark shadow-sm">
+            <a class="navbar-brand" href="#">Zaio</a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+    
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav mr-auto">
+                    <li class="nav-item active">
+                        <a class="nav-link" href="#">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Link</a>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown">
+                            Dropdown
+                        </a>
+                        <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                            <a class="dropdown-item" href="#"> about me</a>
+                            <a class="dropdown-item" href="#">fill out form </a>
+                            <div class="dropdown-divider"></div>
+                            <a class="dropdown-item" href="#"> facebook-page</a>
+                        </div>
+                    </li>
+
+                </ul>
+                <form class="form-inline my-2 my-lg-0">
+                    <input class="form-control mr-sm-2" type="search" placeholder="Search">
+                    <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Search</button>
+                </form>
+            </div>
+        </nav>
+        </section>
+        <!--Jumbotron:-
+
+        --> 
+        <section class="py-5">  
+        <h3 class="course-heading">Welcome bootstrap demo Project </h3>
+
+        <div class="jumbotron">
+            <h1 
+                class="display-4">Hello, Zaio Community!
+            </h1>
+            <p class="lead">
+                The simple jumbotron-style component for calls for extra 
+                attention to featured content or information.
+
+            </p>
+            
+            <hr class="my-4">
+            <p>
+                It utilises classes for typography and spacing to space content out within 
+                the larger container.
+            </p>
+        </div>
+        </section>
+        <section class="py-5">
+            <div class="container">
+                <h5 class="text-uppercase font-weight-light text-center m-5">About</h5>
+        
+                <div class="row">
+                    <div class="col-12 col-md-6 mb-4 mb-md-0">
+                        <img class="d-block w-100" src="images/define_your_future.png" alt="Third slide">
+                    </div>
+                    <div class="col-12 col-md-6">
+                        <p class="lead">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dolorem est praesentium vitae. Ab, accusantium adipisci aperiam dignissimos, et, laboriosam laborum minus nemo nisi placeat provident quos repellat repudiandae soluta sunt?
+                        </p>
+        
+                        <button type="button" class="btn btn-success">See more</button>
+                    </div>
+                </div>
+            </div>
+        </section>
+ 
+    <!--Forms :-
+        Examples and usage guidelines for form control styles, 
+        layout options, and custom components for creating a wide variety of forms.
+    -->
+    <section class="py-5">
+        <div class="container">
+            <h5 class="text-uppercase font-weight-light text-center m-5">Contact</h5>
+    
+            <div class="row">
+                <div class="col-12">
+                    <form>
+                        <div class="form-group">
+                            <label for="name">Name</label>
+                            <input type="email" class="form-control" id="name" placeholder="Enter name">
+                        </div>
+                        <div class="form-group">
+                            <label for="exampleInputEmail1">Email address</label>
+                            <input type="email" class="form-control" id="exampleInputEmail1" placeholder="Enter email">
+                        </div>
+                        <div class="form-group">
+                            <label for="textArea">Message</label>
+                            <textarea name="message" id="textArea" class="form-control" cols="30" rows="10"></textarea>
+                        </div>
+    
+                        <button type="submit" class="btn btn-success">Submit</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+    
+
+
+        <!-- Sourced from getbootstrap.com
+        JS, Popper.js, and jQuery -->
+        <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+        <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js" integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous"></script>
+        <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js" integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV" crossorigin="anonymous"></script>
+    </body>
+
+    <footer class="bg-dark mt-5" style="height: 50px;">
+        <div class="text-white d-flex align-items-center justify-content-center" style="height: 50px;">
+            &copy 2029. All rights reserved.
+        </div>
+    </footer>
+</html>
